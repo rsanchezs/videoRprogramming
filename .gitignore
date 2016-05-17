@@ -1,4 +1,7 @@
 .Rproj.user
+_book/
+.rmdbuild
+*.DS_Store
+log/
 .Rhistory
-.RData
-.Ruserdata
+node_modules
