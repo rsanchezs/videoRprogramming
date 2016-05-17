@@ -1,0 +1,2 @@
+
+# Escritura de funcións

@@ -1,0 +1,2 @@
+
+# Guardado de gráficos

@@ -1,0 +1,2 @@
+
+# Números, strings y booleanos

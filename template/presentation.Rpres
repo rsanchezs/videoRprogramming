@@ -1,0 +1,50 @@
+Programación en R
+========================================================
+
+![](presentation-figure/DATA-SCIENCE-USING-R-PROGRAMMING.jpg)  
+
+__Rubén Sánchez Sancho__
+
+Section
+========================================================
+type: section
+
+- [Subsection 1](#/id1)
+- [Subsection 2](#/id2)
+- [Subsection 3](#/id3)
+- [Subsection 4](#/id4)
+- [Subsection 5](#/id5)
+
+Subsection 1
+========================================================
+id: id1
+type: sub-section
+source: 
+
+
+```{r}
+airquality
+```
+
+
+Slide 0
+========================================================
+title:false
+
+Slide 1
+========================================================
+title:false
+
+Subsection 2
+========================================================
+id: id2
+type: sub-section
+source: 
+
+Slide 0
+========================================================
+title:false
+
+Slide 1
+========================================================
+title:false
