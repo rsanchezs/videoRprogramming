@@ -1,9 +1,11 @@
 Programación en R
 ========================================================
+author: Rubén Sánchez Sancho
+date: https://datasciencesexy.wordpress.com
 
-![](presentation-figure/DATA-SCIENCE-USING-R-PROGRAMMING.jpg)  
+![](presentation-figure/DATA-SCIENCE-USING-R-PROGRAMMING.jpg)
 
-__Rubén Sánchez Sancho__
+[https://datasciencesexy.wordpress.com/](https://datasciencesexy.wordpress.com/)
 
 Introducción
 ========================================================
@@ -36,41 +38,81 @@ Para instalar el IDE R Studio visitaremos el siguiente enlace:
 <https://www.rstudio.com/>
 
 
-Command line
-========================================================
-type: sub-section
-
-
-
-
-Slide 0
-========================================================
-title:false
-
-Atajos de teclado  
-
-
-
-
-|     | Mac | PC |
-| :---: | :---: | :---: |
-| último comando | up arrow | up arrow |
-| tab completion | Tab | Tab |
-
-Slide 1
-========================================================
-title:false
-
 Interfaz de R Studio
 ========================================================
 id: id2
 type: sub-section
 source: 
 
+Paquetes
+========================================================
+id: id3
+type: sub-section
+source: 
+
+Los paquetes son colecciones de funciones __R__, datos y código compilado en un formato definido. El directorio dónde los paquetes están almacenados se llama _library_. __R__ viene con un conjunto de paquetes estandard. Existen otros muchos para la descarga e instalación. Una vez son descargados, tienen que ser cargados en la sesión.
+
+
 Slide 0
 ========================================================
-title:false
+title: false
 
-Slide 1
+```{r eval=FALSE}
+.libPaths() #Localización de la libreria
+
+
+```
+
+```{r eval=FALSE}
+library() # Listar todos los paquetes instalados
+
+```
+
+```{r eval=FALSE}
+search() # Buscar los paquetes actualmente cargados
+
+```
+
+
+Añadiendo  paquetes
 ========================================================
-title:false
+
+Podemos expandir el tipo de análisis añadiendo paquetes. Una lista completa de paquetes disponibles se encuentra en:
+
+[https://cran.r-project.org/web/packages/](https://cran.r-project.org/web/packages/)
+
+Sigue estos pasos:
+
+* Descarga e instala el paquete (sólo una vez)
+
+```{r eval=FALSE}
+install.packages("MASS")
+
+```
+
+
+*  Para usar el paquete invoca __library(paquete)__ para cargarlo en la sesión (tienes que hacerlo en cada sesión)
+
+```{r eval=FALSE}
+library(MASS)
+
+```
+
+Añadiendo  paquetes en R Studio
+========================================================
+
+  
+1. Selecciona __Install__ desde la pestaña  __Packages__ 
+2. Selecciona un __CRAN Mirror__
+3. Elige un paquete (ej: swirl)
+4. Carga el paquete invocando __library(paquete)__
+
+
+Resumen
+========================================================
+
+* Hemos aprendido a descargar paquetes
+* Cargarlos en la sesión
+* Listar los paquetes disponibles
+* Soporte de R studio para la gestión de paquetes
+
