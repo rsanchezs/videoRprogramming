@@ -12,3 +12,51 @@ opts_chunk$set(prompt=TRUE, comment='', results='markup')
 Los paquetes son colecciones de funciones __R__, datos y código compilado en un formato definido. El directorio dónde los paquetes están almacenados se llama _library_. __R__ viene con un conjunto de paquetes estandard. Existen otros muchos para la descarga e instalación. Una vez son descargados, tienen que ser cargados en la sesión.
 
 {%youtube%}K1lAsym3M44{%endyoutube%}
+
+## Funciones para la gestión de paquetes
+
+
+```{r eval=FALSE}
+.libPaths() #Localización de la libreria
+
+
+```
+
+```{r eval=FALSE}
+library() # Listar todos los paquetes instalados
+
+```
+
+```{r eval=FALSE}
+search() # Buscar los paquetes actualmente cargados
+
+```
+
+## Añadiendo paquetes
+
+Podemos expandir el tipo de análisis añadiendo paquetes. Una lista completa de paquetes disponibles se encuentra en:
+
+[https://cran.r-project.org/web/packages/](https://cran.r-project.org/web/packages/)
+
+Sigue estos pasos:
+
+* Descarga e instala el paquete (sólo una vez)
+
+```{r eval=FALSE}
+install.packages("MASS")
+
+```
+
+
+*  Para usar el paquete invoca __library(paquete)__ para cargarlo en la sesión (tienes que hacerlo en cada sesión)
+
+```{r eval=FALSE}
+library(MASS)
+
+```
+## Añadiendo paquetes desde R Studio
+  
+1. Selecciona __Install__ desde la pestaña  __Packages__ 
+2. Selecciona un __CRAN Mirror__
+3. Elige un paquete (ej: swirl)
+4. Carga el paquete invocando __library(paquete)__
