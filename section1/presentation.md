@@ -113,3 +113,119 @@ Resumen
 * Listar los paquetes disponibles
 * Soporte de R studio para la gestión de paquetes
 
+Asignación de variables
+========================================================
+id: id4
+type: sub-section
+source: 
+
+* Uso del operador de asignación __<-__
+* Impresión implícita y explícita
+* Uso de la función __assign__
+
+Slide 0
+========================================================
+title: false
+
+En el _prompt_ de __R__ escribiremos las expresiones. El símbolo __<-__ és el operador de asignación.
+
+
+```r
+x <- 1
+print(x)
+```
+
+```
+[1] 1
+```
+
+```r
+x
+```
+
+```
+[1] 1
+```
+
+```r
+msg <- "hello"
+print(msg)
+```
+
+```
+[1] "hello"
+```
+
+Slide 1
+========================================================
+title: false
+
+Cuando un expresión correcta es introducida en la consola, esta es evaluada y el resultado de la expresión es devuelto.
+
+
+```r
+x <- 5 ## No se imprime en pantalla
+x ## por auto-printing se imprime en pantalla
+```
+
+```
+[1] 5
+```
+
+```r
+print(x) ## impresión explícita
+```
+
+```
+[1] 5
+```
+
+En [1] se muestra que _x_ es un vector y que su primer elemento es _5_.
+
+
+Slide 2
+========================================================
+title: false
+
+Tipícamente con un trabajo interactivo, nosotros no imprimeros los objetos de forma explícita ya que es mucho más cómodo sólo escribir el nombre del objeto y presionar la tecla __Enter__. Sin embargo, cuándo escribamos scripts, funciones o programas muchos más largos, nos veremos con la necesidad de imprimir objetos y es entonce cuándo utilizaremos el modo explícito, ya que el modo ímplicito no trabaja en esas circunstáncias.
+
+Slide 3
+========================================================
+title: false
+
+Cuándo un vector __R__ es mostrado en la consola obsérvese que el índice del vector es mostrado en []. Por ejemplo:
+
+
+```r
+x <- 10:30
+x
+```
+
+```
+ [1] 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+```
+
+Los números entre corchetes no forman parte del vector en sí mismo, sino que se trata únicamente de información para la impresión por pantalla.
+
+En __R__ es de vital importáncia entender la diferéncia que existe en el objeto __R__ y la manera en que estos objetos son mostrados en la consola. Normalmente, la información en la consola puede tener información adicional para hacerla más agradable al usuario.
+
+> __Nota:__ El operador __:__ es utilizado para crear secuencias de enteros.
+
+
+
+Slide 4
+========================================================
+title: false
+
+Podemos utilizar la función __assign__ (dentro de un loop for)
+
+
+```r
+assign("x", 2)
+x
+```
+
+```
+[1] 2
+```
+
