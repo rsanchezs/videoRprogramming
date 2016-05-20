@@ -228,4 +228,16 @@ x
 ```
 [1] 2
 ```
+Números, strings y booleanos
+========================================================
+id: id5
+type: sub-section
+source: 
 
+### Contenido
+
+* tipos básicos en R
+* uso de la función __class__
+* uso de la función __is.X__ (donde X es un tipo de objeto)
+* uso de la función __as.X__ (donde X es un tipo de objeto)
+* operadores de comparación
